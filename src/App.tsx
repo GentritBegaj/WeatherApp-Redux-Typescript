@@ -9,7 +9,7 @@ import { setAlert } from "./store/actions/alertActions";
 import { setError } from "./store/actions/weatherActions";
 
 const App: FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // to dispatch actions
   const weatherData = useSelector((state: RootState) => state.weather.data);
   const loading = useSelector((state: RootState) => state.weather.loading);
   const error = useSelector((state: RootState) => state.weather.error);
